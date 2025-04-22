@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ratflix</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      background-color: #111;
+      letter-spacing: 2px;
+    }
+    h2 {
+      margin: 40px 20px 10px;
+      font-size: 1.5rem;
+      border-left: 4px solid red;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+    .info {
+      padding: 10px;
+    }
+    .title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>ratflix</header>
+
+  <h2>comercial</h2>
+  <div class="grid">
+    <a href="https://www.youtube.com/watch?v=EXEMPLO1" class="link" target="_blank">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x225.png?text=Comercial+1" class="thumb" alt="Comercial 1">
+        <div class="info">
+          <div class="title">Título Comercial 1</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <h2>autoral</h2>
+  <div class="grid">
+    <a href="https://www.youtube.com/watch?v=EXEMPLO2" class="link" target="_blank">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x225.png?text=Autoral+1" class="thumb" alt="Autoral 1">
+        <div class="info">
+          <div class="title">Título Autoral 1</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <h2>documental</h2>
+  <div class="grid">
+    <a href="https://www.youtube.com/watch?v=EXEMPLO3" class="link" target="_blank">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x225.png?text=Documental+1" class="thumb" alt="Documental 1">
+        <div class="info">
+          <div class="title">Título Documental 1</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
